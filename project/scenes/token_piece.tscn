@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://ejt0f3ntwcey"]
+
+[ext_resource type="Shader" path="res://shader/token_piece.gdshader" id="1_8ykig"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_cggma"]
+shader = ExtResource("1_8ykig")
+shader_parameter/inner_circle_colour = Color(1, 1, 1, 1)
+shader_parameter/internal_ring_colour = Color(1, 1, 1, 1)
+shader_parameter/internal_ring_width = 0.0
+
+[node name="TokenPiece" type="ColorRect"]
+material = SubResource("ShaderMaterial_cggma")
+custom_minimum_size = Vector2(200, 200)
+offset_right = 200.0
+offset_bottom = 200.0
