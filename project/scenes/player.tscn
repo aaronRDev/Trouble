@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://608ge0sekvrr"]
+
+[ext_resource type="Texture2D" uid="uid://devjv5t83hbqs" path="res://art/Trouble_board.png" id="1_lqhgr"]
+
+[node name="Player" type="Node2D"]
+
+[node name="TroubleBoard" type="Sprite2D" parent="."]
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("1_lqhgr")

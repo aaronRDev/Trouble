@@ -1,7 +1,14 @@
-[gd_scene format=3 uid="uid://chcqusn7jnhj"]
+[gd_scene load_steps=2 format=3 uid="uid://chcqusn7jnhj"]
+
+[ext_resource type="Texture2D" uid="uid://devjv5t83hbqs" path="res://art/Trouble_board.png" id="1_lsx46"]
 
 [node name="base_scene" type="Node2D"]
 
-[node name="ColorRect" type="ColorRect" parent="."]
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="BG" type="ColorRect" parent="."]
+offset_right = 1920.0
+offset_bottom = 1080.0
+
+[node name="TroubleBoard" type="Sprite2D" parent="BG"]
+position = Vector2(960, 540)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("1_lsx46")
